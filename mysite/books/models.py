@@ -6,6 +6,7 @@ class Publisher(models.Model):
 	address = models.CharField(max_length=50)
 	city = models.CharField(max_length=60)
 	state_province = models.CharField(max_length=30)
+	org = models.CharField(max_length=50, blank=True, null=True)
 	country = models.CharField(max_length=50)
 	website = models.URLField()
 

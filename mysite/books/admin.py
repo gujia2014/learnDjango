@@ -4,7 +4,7 @@ from django.contrib import admin
 from books.models import Publisher, Author, Book
 
 class PublisherAdmin(admin.ModelAdmin):
-	list_display = ('name', 'address', 'city', 'state_province')
+	list_display = ('name', 'address', 'city', 'state_province', 'org')
 	#search_fields = ('name',)
 	list_filter = ('name',)
 

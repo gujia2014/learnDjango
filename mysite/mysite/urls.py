@@ -16,3 +16,8 @@ urlpatterns = patterns('',
     url('^another-time-page/$', current_datetime),
     url(r'^time/plus/(\d{1,2})/$', hours_ahead)
 )
+
+urlpatterns += patterns('addApi.views',
+    url(r'^myapi/add_publisher$', 'add_publisher', name='add_publisher'),
+    url(r'^myapi/update_publisher$', 'update_publisher', name='update_publisher'),
+)
